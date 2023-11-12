@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Input Avançado React/Next.js
 
-First, run the development server:
+Este estudo tem como objetivo utilizar as melhores tecnologias para criar formulários no React/Next.js. Também visa aproveitar o uso de props para criar componentes individuais no formulário. 
+
+Para utilizar a função register do react-hook-form foi necessário fazer uma referência. Logo foi utilizado o Hook do proprio React, chamada *forwardRef*
+
+
+O forwardRef é usado para encaminhar uma referência para um elemento filho para um componente pai. Neste caso, o forwardRef é usado para encaminhar uma referência para o elemento <input> para o componente pai. Isso permite que o componente pai acesse o elemento <input> diretamente.
+
+O forwardRef é necessário porque o componente Input é um componente funcional. Componentes funcionais não podem ser referenciados diretamente, pois eles não têm uma instância. O forwardRef cria uma instância de referência que pode ser usada para acessar o componente pai.
+
+## 🛠 Tecnologias utilizada
+
+✅ React/Next.js-13
+
+✅ TailwindCss
+
+Blibiotecas
+
+✅ React Hook Form
+
+✅ Zod
+
+✅ @hookform/resolvers
+
+
+
+## Instalação
+
+Clone o projeto e faça a instalação com npm
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  npm install
+  cd advanced-input-react
+  npm run dev (iniciar projeto)
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    
